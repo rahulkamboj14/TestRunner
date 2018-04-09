@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Local" parallel="tests" thread-count="5" verbose="2">
+	<test name="Test in Chrome" parallel="classes">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="testRunner.Windows7Chrome60" >
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
